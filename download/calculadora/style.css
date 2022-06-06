@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+#calc {
+  width: 300px;
+  padding: 1rem;
+  background-color: #112B3C;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#calc h3 {
+  font-size: .8rem;
+  font-weight: 300;
+  color: white;
+  text-align: start;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previous-operation {
+  color: #C70A80;
+  min-height: 1.6rem;
+  padding: 0.2rem;
+  overflow-wrap: break-word;
+}
+
+#current-operation {
+  min-height: 1.6rem;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0.2rem;
+  overflow-wrap: break-word;
+}
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#buttons-container button {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 4rem;
+  font-size: 1.2rem;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+
+#buttons-container .number {
+  background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+  background-color: #0AA1DD;
+  border-color: #999;
+  transition: 0.2s;
+}
+
+#buttons-container #equal-btn {
+  grid-column: span 2;
+}
+
+#buttons-container #equal-btn:hover {
+  background-color: #A760FF;
+} 
